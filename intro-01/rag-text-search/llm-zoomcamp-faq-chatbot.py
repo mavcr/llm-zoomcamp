@@ -4,7 +4,7 @@ import llm
 import minsearch
 import searchutil
 
-with open('../documents.json', 'rt') as f_in:
+with open('../../documents.json', 'rt') as f_in:
     docs_raw = json.load(f_in)
 
 documents = []

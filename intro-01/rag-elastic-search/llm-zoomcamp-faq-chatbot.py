@@ -8,7 +8,7 @@ index_name = "course_questions"
 es_client = Elasticsearch("http://localhost:9200")
 
 def init():
-    with open('../documents.json', 'rt') as f_in:
+    with open('../../documents.json', 'rt') as f_in:
         docs_raw = json.load(f_in)
 
     documents = []
@@ -17,7 +17,7 @@ def init():
             doc['course'] = course_dict['course']
             documents.append(doc)
 
-    elasticsearchinitializer.initialize_client(es_client, documents,index_name)
+    elasticsearchinitializer.initialize_client(es_client, documents, index_name)
 
 def main():
     init()
