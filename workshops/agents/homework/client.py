@@ -1,6 +1,6 @@
 import asyncio
 from fastmcp import Client
-import homework
+from workshops.agents.homework import homework
 
 
 async def main():
